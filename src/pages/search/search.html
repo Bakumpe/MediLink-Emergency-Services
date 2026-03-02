@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Ambulance — MediLink Uganda</title>
+    <!-- Shared styles -->
+    <link rel="stylesheet" href="../../../global_css/global.css">
+    <!-- Page-specific styles -->
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+
+<!-- Emergency Alert Bar -->
+<div class="emergency-bar">
+    🚨 Emergency? Call <strong>999</strong> or
+    <a href="booking.html">Request an Ambulance Now →</a>
+</div>
+
+<!-- Navigation -->
+<nav>
+    <a href="../../../index.html" class="brand">
+        <div class="brand-icon">🚑</div>
+        Medi<span>Link</span>
+    </a>
+    <ul>
+        <li><a href="../search/search.html">Find Ambulance</a></li>
+        <li><a href="../../../index.html#how">How It Works</a></li>
+        <li><a href="../tracking/tracking.html" class="active">Track</a></li>
+        <li><a href="../dashboard/dashboard.html">Dashboard</a></li>
+    </ul>
+    <div class="nav-cta">
+        <a href="#" class="btn btn-ghost">Sign In</a>
+        <a href="../booking/booking.html" class="btn btn-red">🚑 Request Now</a>
+    </div>
+</nav>
+
+<!-- SEARCH SECTION -->
+<section class="search-section page-offset">
+    <div class="search-container">
+
+        <!-- Header -->
+        <div class="section-header text-center">
+            <div class="section-label">Find Help</div>
+            <h2 class="section-title">Browse Ambulance Providers</h2>
+            <p class="section-sub" style="margin:0 auto;text-align:center;">
+                Search our nationwide directory of verified ambulance services across Uganda.
+            </p>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <span>📍</span>
+            <input type="text" placeholder="Enter your location — e.g. Kampala, Entebbe, Gulu...">
+            <button class="btn btn-red">Search</button>
+        </div>
+
+        <!-- Filter Chips -->
+        <div class="filter-row">
+            <button class="filter-chip active">All Types</button>
+            <button class="filter-chip">Basic Life Support (BLS)</button>
+            <button class="filter-chip">Advanced Life Support (ALS)</button>
+            <button class="filter-chip">ICU-Equipped</button>
+            <button class="filter-chip">Maternity</button>
+            <button class="filter-chip">Available Now</button>
+        </div>
+
+        <!-- Results Meta -->
+        <div class="results-meta">
+            <span>Showing <strong>6</strong> providers near <strong>Kampala</strong></span>
+            <span>Sorted by: Distance</span>
+        </div>
+
+        <!-- Provider Cards -->
+        <div class="results-grid">
+
+            <!-- Card 1 -->
+            <div class="provider-card">
+                <div class="card-top">
+                    <div class="provider-icon">🚑</div>
+                    <div class="availability available">
+                        <span class="status-dot"></span> Available
+                    </div>
+                </div>
+                <div class="provider-name">AAR Healthcare</div>
+                <div class="provider-location">📍 Kampala — 1.2 km away</div>
+                <div class="card-tags">
+                    <span class="tag">ALS</span>
+                    <span class="tag">ICU</span>
+                    <span class="tag">24/7</span>
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <div class="price">UGX 150k</div>
+                        <div class="price-label">Base fare</div>
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span> 4.9
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="provider-card">
+                <div class="card-top">
+                    <div class="provider-icon">🏥</div>
+                    <div class="availability available">
+                        <span class="status-dot"></span> Available
+                    </div>
+                </div>
+                <div class="provider-name">Mulago Rescue Unit</div>
+                <div class="provider-location">📍 Kawempe — 2.8 km away</div>
+                <div class="card-tags">
+                    <span class="tag">BLS</span>
+                    <span class="tag">Maternity</span>
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <div class="price">UGX 80k</div>
+                        <div class="price-label">Base fare</div>
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span> 4.5
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="provider-card">
+                <div class="card-top">
+                    <div class="provider-icon">🩺</div>
+                    <div class="availability busy">
+                        <span class="busy-dot"></span> Busy
+                    </div>
+                </div>
+                <div class="provider-name">Nakasero Med-Response</div>
+                <div class="provider-location">📍 Nakasero — 4.1 km away</div>
+                <div class="card-tags">
+                    <span class="tag">ALS</span>
+                    <span class="tag">Trauma</span>
+                    <span class="tag">Neonatal</span>
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <div class="price">UGX 200k</div>
+                        <div class="price-label">Base fare</div>
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span> 4.8
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="provider-card">
+                <div class="card-top">
+                    <div class="provider-icon">🚒</div>
+                    <div class="availability available">
+                        <span class="status-dot"></span> Available
+                    </div>
+                </div>
+                <div class="provider-name">UPDF Medical Corps</div>
+                <div class="provider-location">📍 Mbuya — 5.3 km away</div>
+                <div class="card-tags">
+                    <span class="tag">ICU</span>
+                    <span class="tag">ALS</span>
+                    <span class="tag">Military</span>
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <div class="price">UGX 120k</div>
+                        <div class="price-label">Base fare</div>
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span> 4.6
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="provider-card">
+                <div class="card-top">
+                    <div class="provider-icon">🏨</div>
+                    <div class="availability available">
+                        <span class="status-dot"></span> Available
+                    </div>
+                </div>
+                <div class="provider-name">Case Hospital Ambulance</div>
+                <div class="provider-location">📍 Muyenga — 6.0 km away</div>
+                <div class="card-tags">
+                    <span class="tag">BLS</span>
+                    <span class="tag">Paeds</span>
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <div class="price">UGX 100k</div>
+                        <div class="price-label">Base fare</div>
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★☆☆</span> 4.1
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="provider-card">
+                <div class="card-top">
+                    <div class="provider-icon">💊</div>
+                    <div class="availability available">
+                        <span class="status-dot"></span> Available
+                    </div>
+                </div>
+                <div class="provider-name">Norvik Hospital EMS</div>
+                <div class="provider-location">📍 Ntinda — 7.2 km away</div>
+                <div class="card-tags">
+                    <span class="tag">ALS</span>
+                    <span class="tag">Cardiac</span>
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <div class="price">UGX 180k</div>
+                        <div class="price-label">Base fare</div>
+                    </div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span> 4.7
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /results-grid -->
+    </div><!-- /search-container -->
+</section>
+
+<!--  FOOTER-->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <a href="../../../index.html" class="brand">
+                <div class="brand-icon">🚑</div>
+                Medi<span>Link</span>
+            </a>
+            <p>Connecting Uganda to emergency medical transportation through technology. Saving lives, one dispatch at a time.</p>
+            <div class="btn-row">
+                <a href="../booking/booking.html" class="btn btn-red" style="font-size:13px;padding:8px 18px;">Get Help Now</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h5>Services</h5>
+            <ul>
+                <li><a href="../search/search.html">Find Ambulance</a></li>
+                <li><a href="../booking/booking.html">Book Now</a></li>
+                <li><a href="../tracking/tracking.html">Track Booking</a></li>
+                <li><a href="#">Hospital Directory</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>Providers</h5>
+            <ul>
+                <li><a href="#">Join MediLink</a></li>
+                <li><a href="../dashboard/dashboard.html">Dashboard</a></li>
+                <li><a href="#">Fleet Management</a></li>
+                <li><a href="#">Pricing Info</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>Company</h5>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 MediLink Uganda. All rights reserved.</span>
+        <span>🇺🇬 Made for Uganda · Emergency: <strong>999</strong></span>
+    </div>
+</footer>
+
+<script src="search.js"></script>
+
+</body>
+</html>

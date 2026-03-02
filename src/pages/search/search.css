@@ -1,0 +1,247 @@
+/*
+   MediLink — search.css
+   Page-specific styles for: Search & Browse (search.html)
+ */
+
+/* Page Background */
+.search-section {
+    background: #0A0A0A;
+    min-height: calc(100vh - 68px);
+}
+
+.search-container {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+/* Search Box  */
+.search-box {
+    display: flex;
+    gap: 12px;
+    background: var(--dark-card);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 6px 6px 6px 20px;
+    align-items: center;
+    margin-bottom: 40px;
+    transition: border-color 0.2s;
+}
+
+.search-box:focus-within { 
+    border-color: var(--red); 
+}
+
+.search-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+
+.search-box input::placeholder { 
+    color: var(--text-muted); 
+}
+
+/* Filter Chips */
+.filter-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+}
+
+.filter-chip {
+    padding: 7px 18px;
+    border-radius: 100px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-light);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.2s;
+}
+
+.filter-chip:hover  { 
+    border-color: rgba(255, 255, 255, 0.25); 
+    color: #fff; 
+}
+.filter-chip.active { 
+    background: var(--red); 
+    border-color: var(--red); 
+    color: #fff; 
+}
+
+/*  Results Count  */
+.results-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.results-meta strong { 
+    color: #fff; 
+}
+
+/*  Provider Cards Grid  */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/*  Provider Card */
+.provider-card {
+    background: var(--dark-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    cursor: pointer;
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+}
+
+.provider-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--red);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+.provider-card:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.provider-card:hover::before {
+     transform: scaleX(1); 
+}
+
+/* Card Inner Components */
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.provider-icon {
+    width: 48px; height: 48px;
+    background: rgba(232, 39, 42, 0.12);
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    font-size: 22px;
+}
+
+.availability {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.availability.available { 
+    color: var(--green); 
+}
+
+.availability.busy { 
+    color: var(--amber); 
+}
+
+.availability .busy-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--amber);
+    display: inline-block;
+}
+
+.provider-name     { 
+    font-size: 17px; 
+    font-weight: 700; 
+    margin-bottom: 4px; 
+}
+.provider-location { 
+    font-size: 13px; 
+    color: var(--text-muted); 
+    margin-bottom: 16px; 
+}
+
+.card-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+
+/*  Pricing  */
+.price       { 
+    font-size: 18px; 
+    font-weight: 700; 
+}
+.price-label { 
+    font-size: 11px; 
+    color: var(--text-muted); 
+}
+
+/*  Rating  */
+.rating { 
+    display: flex; 
+    align-items: center; 
+    gap: 4px; 
+    font-size: 13px; 
+}
+.stars  { 
+    color: #F59E0B; 
+    font-size: 12px; 
+}
+
+/*  No Results State  */
+.no-results {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+}
+
+.no-results .no-results-icon { 
+    font-size: 48px; 
+    margin-bottom: 16px; 
+}
+.no-results h3 { 
+    font-size: 20px; 
+    margin-bottom: 8px; 
+    color: #fff; 
+}
+
+/*  Responsive */
+@media (max-width: 900px) {
+    .results-grid { 
+        grid-template-columns: 1fr; 
+    
+    }
+    .filter-row   { 
+        gap: 8px; 
+    }
+}

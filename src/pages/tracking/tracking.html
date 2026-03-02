@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Ambulance — MediLink Uganda</title>
+    <!-- Shared styles -->
+    <link rel="stylesheet" href="../../../global_css/global.css">
+    <!-- Page-specific styles -->
+    <link rel="stylesheet" href="tracking.css">
+</head>
+<body>
+
+<!-- Emergency Alert Bar -->
+<div class="emergency-bar">
+    🚑 Your ambulance is on its way! Call driver: <strong>+256 772 123 456</strong>
+</div>
+
+<!-- Navigation -->
+<nav>
+    <a href="../../../index.html" class="brand">
+        <div class="brand-icon">🚑</div>
+        Medi<span>Link</span>
+    </a>
+    <ul>
+        <li><a href="../search/search.html">Find Ambulance</a></li>
+        <li><a href="../../../index.html#how">How It Works</a></li>
+        <li><a href="../tracking/tracking.html" class="active">Track</a></li>
+        <li><a href="../dashboard/dashboard.html">Dashboard</a></li>
+    </ul>
+    <div class="nav-cta">
+        <a href="#" class="btn btn-ghost">Sign In</a>
+        <a href="../booking/booking.html" class="btn btn-red">🚑 Request Now</a>
+    </div>
+</nav>
+
+<!-- TRACKING SECTION -->
+<section class="tracking-section page-offset">
+
+    <!-- Header -->
+    <div class="section-header">
+        <div class="section-label">Live Tracking</div>
+        <h2 class="section-title">Track Your Ambulance</h2>
+        <p class="section-sub">
+            Real-time location updates so you know exactly when help will arrive.
+        </p>
+    </div>
+
+    <div class="tracking-layout">
+
+        <!-- Left: Info Panel -->
+        <div>
+            <div class="tracking-card">
+
+                <!-- Booking ID -->
+                <div class="tracking-id">Booking #ML-20240312-0047</div>
+                <div class="tracking-name">AAR Healthcare — ALS Ambulance</div>
+
+                <!-- Progress Steps -->
+                <div class="progress-track">
+                    <div class="progress-line"></div>
+                    <div class="progress-fill"></div>
+
+                    <div class="progress-step">
+                        <div class="p-dot done">✓</div>
+                        <div class="p-info">
+                            <h5>Booking Confirmed</h5>
+                            <span>10:42 AM · Driver assigned</span>
+                        </div>
+                    </div>
+
+                    <div class="progress-step">
+                        <div class="p-dot done">✓</div>
+                        <div class="p-info">
+                            <h5>Ambulance Dispatched</h5>
+                            <span>10:43 AM · En route to you</span>
+                        </div>
+                    </div>
+
+                    <div class="progress-step">
+                        <div class="p-dot active">🚑</div>
+                        <div class="p-info">
+                            <h5>On The Way</h5>
+                            <span>Estimated arrival in <strong style="color:var(--green);">4 minutes</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="progress-step">
+                        <div class="p-dot pending">4</div>
+                        <div class="p-info">
+                            <h5>Arrived at Pickup</h5>
+                            <span>Waiting...</span>
+                        </div>
+                    </div>
+
+                    <div class="progress-step">
+                        <div class="p-dot pending">5</div>
+                        <div class="p-info">
+                            <h5>Transporting to Hospital</h5>
+                            <span>Mulago National Referral</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Driver Info -->
+                <div class="driver-card">
+                    <div class="driver-avatar">JK</div>
+                    <div class="driver-info">
+                        <div class="driver-name">James Kato — Paramedic</div>
+                        <div class="driver-plate">UBD 234K · Toyota HiAce ALS</div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="driver-actions">
+                    <button class="icon-btn call">📞 Call Driver</button>
+                    <button class="icon-btn">💬 Message</button>
+                    <button class="icon-btn">❌ Cancel</button>
+                </div>
+
+            </div><!-- /tracking-card -->
+        </div>
+
+        <!-- Right: Map -->
+        <div>
+            <div class="big-map">
+                <!-- Road grid -->
+                <div class="map-road2 mh1"></div>
+                <div class="map-road2 mh2"></div>
+                <div class="map-road2 mv1"></div>
+                <div class="map-road2 mv2"></div>
+
+                <!-- Ambulance (animated) -->
+                <div class="big-ambulance">🚑</div>
+
+                <!-- Destination marker -->
+                <div class="dest-marker">
+                    <div class="dest-icon"><span>🏥</span></div>
+                </div>
+
+                <!-- Route line -->
+                <div class="route-line"></div>
+
+                <!-- User location dot -->
+                <div class="user-location">
+                    <div class="user-location-dot"></div>
+                </div>
+
+                <!-- ETA overlay -->
+                <div class="eta-overlay">
+                    <div class="eta-label">Estimated Arrival</div>
+                    <div class="eta-time">4 min</div>
+                </div>
+
+                <!-- Hospital overlay -->
+                <div class="hospital-overlay">
+                    <div class="h-label">Destination</div>
+                    <div class="h-name">🏥 Mulago Hospital</div>
+                </div>
+
+            </div><!-- /big-map -->
+        </div>
+
+    </div><!-- /tracking-layout -->
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <a href="../../../index.html" class="brand">
+                <div class="brand-icon">🚑</div>
+                Medi<span>Link</span>
+            </a>
+            <p>Connecting Uganda to emergency medical transportation through technology. Saving lives, one dispatch at a time.</p>
+            <div class="btn-row">
+                <a href="../booking/booking.html" class="btn btn-red" style="font-size:13px;padding:8px 18px;">Get Help Now</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h5>Services</h5>
+            <ul>
+                <li><a href="../search/search.html">Find Ambulance</a></li>
+                <li><a href="../booking/booking.html">Book Now</a></li>
+                <li><a href="../tracking/tracking.html">Track Booking</a></li>
+                <li><a href="#">Hospital Directory</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>Providers</h5>
+            <ul>
+                <li><a href="#">Join MediLink</a></li>
+                <li><a href="../dashboard/dashboard.html">Dashboard</a></li>
+                <li><a href="#">Fleet Management</a></li>
+                <li><a href="#">Pricing Info</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>Company</h5>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 MediLink Uganda. All rights reserved.</span>
+        <span>🇺🇬 Made for Uganda · Emergency: <strong>999</strong></span>
+    </div>
+</footer>
+
+<script src="../tracking/tracking.js"></script>
+
+</body>
+</html>
