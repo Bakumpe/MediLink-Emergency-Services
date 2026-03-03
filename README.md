@@ -5,7 +5,7 @@
 
 ## 🌍 Problem Statement
 
-Access to timely and reliable emergency medical transportation remains a critical challenge in Uganda, particularly in both **urban** and **rural** areas. Medical emergencies such as road accidents, sudden illnesses, cardiac events, or maternity complications — can escalate rapidly due to delays in ambulance response.
+Access to timely and reliable emergency medical transportation remains a critical challenge in Uganda, particularly in both **urban** and **rural** areas. Medical emergencies such as road accidents, sudden illnesses, cardiac events, or maternity complications can escalate rapidly due to delays in ambulance response.
 
 Currently, people facing health crises often struggle to:
 - Locate and contact nearby ambulance services amid panic and limited information
