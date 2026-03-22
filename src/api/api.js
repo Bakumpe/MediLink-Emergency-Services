@@ -201,7 +201,7 @@ const AuthAPI = {
 const HospitalsAPI = {
     async list(filters = {}) {
         const q = new URLSearchParams(filters).toString();
-        return apiCall('GET', `/hospitals/${q ? '?' + q : ''}`);
+        return apiCall('GET', `http://localhost:8000/api/v1/hospitals/${q ? '?' + q : ''}`);
     },
     async detail(id) {
         return apiCall('GET', `/hospitals/${id}/`);
